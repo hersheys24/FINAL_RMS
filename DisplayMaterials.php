@@ -59,7 +59,7 @@ if ($conn->connect_error) {
         }
 
         table {
-    width: 80%; /* Adjusted width */
+    width: 100%; /* Adjusted width */
     margin: 0 auto; /* Centered the table horizontally */
     table-layout: fixed; /* Fixed layout */
     border-collapse: collapse; /* Collapse the borders */
