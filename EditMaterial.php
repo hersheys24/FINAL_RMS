@@ -65,6 +65,155 @@ $conn->close();
     <link rel="stylesheet" href="addedit.css">
 </head>
 
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Jaldi&display=swap" rel="stylesheet');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jaldi', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ededee;
+
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 10px 50px;
+    background: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation h3 {
+    color: #fff;
+}
+
+
+h1 {
+    position: absolute;
+    margin-bottom: 10em;
+}
+
+
+.wrapper {
+    position: relative;
+    margin-top: 100px;
+    width: 400px;
+    height: 500px;
+    padding-bottom: 20px;
+    background: transparent;
+    background-color:#1d1d1d;
+    border: 2px solid 191818;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: ; */
+    transition: height .2s ease;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+    
+}
+
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+    
+}
+
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(90, 90, 90); 
+    font-weight: 500;
+    pointer-events: none;   
+}
+
+.input-box textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+    color: #fff;
+    resize: none; 
+}
+
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: hsl(49, 100%, 49%);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+.input-box input[type="number"]::-webkit-inner-spin-button,
+.input-box input[type="number"]::-webkit-outer-spin-button {
+    width: 20em; /* Adjust the height as needed */
+}
+
+
+.input-box input[type="number"] {
+    width: 350px; /* Set the desired width */
+}
+
+    </style>
+
+
 <body>
 
 <header>        
